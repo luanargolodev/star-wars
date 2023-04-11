@@ -1,4 +1,5 @@
 import { ScreenScroll } from '../../components/Container'
+import { GoBack } from '../../components/GoBack'
 import { Hero } from '../../components/Hero'
 import { useDataStore } from '../../services/stores'
 
@@ -7,7 +8,8 @@ export const Detail = () => {
 
   return (
     <ScreenScroll>
-      <Hero item={selectedData} />
+      <Hero item={selectedData} withoutLogo />
+      <GoBack />
     </ScreenScroll>
   )
 }

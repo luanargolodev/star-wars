@@ -6,7 +6,7 @@ import { Logo } from '../Logo'
 import { Tag } from '../Tag'
 import { IconButton } from '../IconButton'
 
-export const Hero = ({ item }) => {
+export const Hero = ({ item, withoutLogo }) => {
   const { image_url, title, subtitle, type } = item
 
   return (
@@ -17,8 +17,8 @@ export const Hero = ({ item }) => {
         }}
       >
         <Gradient colors={[colors.dark, 'transparent', colors.dark]}>
-          <Logo size="small" />
-          <Tag mt={200}>{type}</Tag>
+          {!withoutLogo && <Logo />}
+          <Tag mt={withoutLogo ? 224 : 200}>{type}</Tag>
           <Text fontFamily="bold" size={28} mt={8}>
             {title}
           </Text>
