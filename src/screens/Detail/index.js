@@ -8,7 +8,7 @@ export const Detail = () => {
 
   return (
     <ScreenScroll>
-      <Hero item={selectedData} withoutLogo />
+      <Hero item={selectedData} onDetail />
       <GoBack />
     </ScreenScroll>
   )

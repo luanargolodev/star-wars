@@ -6,7 +6,7 @@ import { Logo } from '../Logo'
 import { Tag } from '../Tag'
 import { IconButton } from '../IconButton'
 
-export const Hero = ({ item, withoutLogo }) => {
+export const Hero = ({ item, onDetail }) => {
   const { image_url, title, subtitle, type } = item
 
   return (
@@ -17,8 +17,8 @@ export const Hero = ({ item, withoutLogo }) => {
         }}
       >
         <Gradient colors={[colors.dark, 'transparent', colors.dark]}>
-          {!withoutLogo && <Logo />}
-          <Tag mt={withoutLogo ? 224 : 200}>{type}</Tag>
+          {!onDetail && <Logo />}
+          <Tag mt={onDetail ? 224 : 200}>{type}</Tag>
           <Text fontFamily="bold" size={28} mt={8}>
             {title}
           </Text>
@@ -26,8 +26,12 @@ export const Hero = ({ item, withoutLogo }) => {
 
           <ButtonsView>
             <IconButton label="Favoritos" name="add-circle-outline" />
-            <IconButton label="Favoritos" name="add-circle-outline" />
-            <IconButton label="Saiba mais" name="information-circle-outline" />
+            {!onDetail && (
+              <IconButton
+                label="Saiba mais"
+                name="information-circle-outline"
+              />
+            )}
           </ButtonsView>
         </Gradient>
       </ImageBackground>
