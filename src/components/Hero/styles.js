@@ -19,3 +19,11 @@ export const Gradient = styled(LinearGradient)`
   padding-left: ${({ theme }) => theme.metrics.px(24)}px;
   padding-top: ${({ theme }) => theme.metrics.px(56)}px;
 `
+
+export const ButtonsView = styled.View`
+  width: 100%;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: ${({ theme }) => theme.metrics.px(12)}px;
+`
