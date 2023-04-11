@@ -24,6 +24,7 @@ export const Hero = () => {
 
           <ButtonsView>
             <IconButton label="Favoritos" name="add-circle-outline" />
+            <IconButton label="Favoritos" name="add-circle-outline" />
             <IconButton label="Saiba mais" name="information-circle-outline" />
           </ButtonsView>
         </Gradient>

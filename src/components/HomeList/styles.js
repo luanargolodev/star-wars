@@ -1,0 +1,8 @@
+import styled from 'styled-components/native'
+
+export const Container = styled.View`
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+`

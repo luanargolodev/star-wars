@@ -21,7 +21,7 @@ export const Gradient = styled(LinearGradient)`
 `
 
 export const ButtonsView = styled.View`
-  width: 100%;
+  width: 95%;
   flex-direction: row;
   align-items: baseline;
   justify-content: space-between;
