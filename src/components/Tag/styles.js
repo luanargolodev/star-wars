@@ -5,9 +5,7 @@ export const Container = styled.View`
   justify-content: center;
   background-color: ${({ theme }) => theme.colors.red};
   height: ${({ theme }) => theme.metrics.px(24)}px;
-  max-width: ${({ theme }) => theme.metrics.px(80)}px;
-  padding-left: ${({ theme }) => theme.metrics.px(4)}px;
-  padding-right: ${({ theme }) => theme.metrics.px(4)}px;
+  max-width: ${({ theme }) => theme.metrics.px(90)}px;
   border-radius: ${({ theme }) => theme.metrics.px(24)}px;
   margin-top: ${({ theme, mt }) => theme.metrics.px(mt || 0)}px;
   margin-bottom: ${({ theme, mb }) => theme.metrics.px(mb || 0)}px;

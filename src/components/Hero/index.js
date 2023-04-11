@@ -6,21 +6,23 @@ import { Logo } from '../Logo'
 import { Tag } from '../Tag'
 import { IconButton } from '../IconButton'
 
-export const Hero = () => {
+export const Hero = ({ item }) => {
+  const { image_url, title, subtitle, type } = item
+
   return (
     <Container>
       <ImageBackground
         source={{
-          uri: 'https://lumiere-a.akamaihd.net/v1/images/darth-vader-main_4560aff7.jpeg',
+          uri: image_url,
         }}
       >
         <Gradient colors={[colors.dark, 'transparent', colors.dark]}>
           <Logo size="small" />
-          <Tag mt={200}>Filme</Tag>
+          <Tag mt={200}>{type}</Tag>
           <Text fontFamily="bold" size={28} mt={8}>
-            Episódio I
+            {title}
           </Text>
-          <Text size={18}>A Ameaça Fantasma</Text>
+          <Text size={18}>{subtitle}</Text>
 
           <ButtonsView>
             <IconButton label="Favoritos" name="add-circle-outline" />
