@@ -8,8 +8,7 @@ import {
 } from '@expo-google-fonts/source-sans-pro'
 import { ThemeProvider } from 'styled-components'
 import { theme } from './src/styles'
-
-import SplashScreen from './src/screens/SplashScreen'
+import { Routes } from './src/routes'
 
 export default function App() {
   let [fontsLoaded] = useFonts({
@@ -25,7 +24,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <SplashScreen />
+      <Routes />
     </ThemeProvider>
   )
 }
