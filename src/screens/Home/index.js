@@ -1,4 +1,4 @@
-import { Container, ScreenScroll } from '../../components/Container'
+import { ScreenScroll } from '../../components/Container'
 import { HomeList } from '../../components/HomeList'
 import { Hero } from '../../components/Hero'
 

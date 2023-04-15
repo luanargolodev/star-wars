@@ -5,6 +5,7 @@ import { Text } from '../Text'
 import { Logo } from '../Logo'
 import { Tag } from '../Tag'
 import { IconButton } from '../IconButton'
+import { PlayButton } from '../PlayButton'
 
 export const Hero = ({ item, onDetail }) => {
   const { image_url, title, subtitle, type } = item
@@ -26,6 +27,7 @@ export const Hero = ({ item, onDetail }) => {
 
           <ButtonsView>
             <IconButton label="Favoritos" name="add-circle-outline" />
+            <PlayButton />
             {!onDetail && (
               <IconButton
                 label="Saiba mais"
